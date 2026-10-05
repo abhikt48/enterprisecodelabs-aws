@@ -1,0 +1,11 @@
+{
+  "orderId": "ord-1001",
+  "customerId": "cust-42",
+  "amount": 129.99,
+  "currency": "GBP",
+  "items": [
+    { "sku": "SKU-1", "qty": 2, "price": 49.99 },
+    { "sku": "SKU-2", "qty": 1, "price": 30.01 }
+  ],
+  "createdAt": "2026-10-03T09:30:00Z"
+}
