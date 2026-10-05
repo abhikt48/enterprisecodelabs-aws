@@ -12,11 +12,11 @@ Globals:
     MemorySize: 512
 
 Resources:
-  HelloWorldFunction:
+  OrderProcessorFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      CodeUri: HelloWorldFunction
-      Handler: helloworld.App::handleRequest
+      CodeUri: OrderProcessorFunction
+      Handler: com.ennterprisecodelabs.orders::handleRequest
       Runtime: java21
       Architectures:
         - x86_64
@@ -25,7 +25,7 @@ Resources:
         Variables:
           PARAM1: VALUE
       Events:
-        HelloWorld:
+        OrderProcessor:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
           Properties:
             Path: /hello

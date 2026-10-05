@@ -60,7 +60,7 @@ Build your application with the `sam build` command.
 enterprisecodelabs-aws$ sam build
 ```
 
-The SAM CLI installs dependencies defined in `HelloWorldFunction/pom.xml`, creates a deployment package, and saves it in the `.aws-sam/build` folder.
+The SAM CLI installs dependencies defined in `OrderProcessorFunction/pom.xml`, creates a deployment package, and saves it in the `.aws-sam/build` folder.
 
 Test a single function by invoking it directly with a test event. An event is a JSON document that represents the input that the function receives from the event source. Test events are included in the `events` folder in this project.
 
@@ -105,7 +105,7 @@ You can find more information and examples about filtering Lambda function logs 
 
 ## Unit tests
 
-Tests are defined in the `HelloWorldFunction/src/test` folder in this project.
+Tests are defined in the `OrderProcessorFunction/src/test` folder in this project.
 
 ```bash
 enterprisecodelabs-aws$ cd HelloWorldFunction
